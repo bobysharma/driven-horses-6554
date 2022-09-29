@@ -1,0 +1,130 @@
+.footer-contact{
+    text-align: center;
+    /* margin-top: -24px; */
+    padding: 15px;
+    font-size: 15px;
+    margin-left: 20px;
+     
+ 
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+ }
+ .footer-contact a{
+    text-decoration: none;
+    padding-left:10px ;
+    color: #000;
+ }
+ .footer-contact>icons{
+    margin-left: 10px;
+    padding-left: 20px;
+ }
+ 
+ .main-footer{
+   background-color: #F0F1F2;
+   padding-top:40px;
+   padding-bottom: 10px;
+ }
+ .sub-footer{
+ width: 90%;
+ margin: auto;
+ display:grid;
+ grid-template-columns: repeat(2,1fr);
+ padding-bottom: 20px;
+ }
+  
+ .sub-footer>.sub-footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 20px;
+    gap:20px;
+ 
+ }
+ .sub-footer>.sub-footer-grid>div>div{
+    margin-bottom: 10px;
+    font-size:13px;
+   
+    
+ }
+ .sub-footer>.sub-footer-grid>div>div>a{
+    text-decoration: none;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    color:#4F0000;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+    font-weight: 520;
+    
+ }
+ .sub-footer>.sub-footer-grid>div>div>a:hover{
+    margin-top: 115px;
+    /* padding: 10px; */
+    text-decoration: underline;
+ }
+ .main-footer>.sub-footer>.sub-footer-grid>div>.footer-heading{
+    font-size: 13px;
+    font-weight: 900;
+ }
+ .main-footer>.sub-footer>div:nth-child(2){
+   display: flex;
+ ;
+   /* width: 100%; */
+   /* border: 1px soid red; */
+   flex-direction:row-reverse;
+   margin-right: 20px;
+  
+ }
+ .main-footer>.sub-footer>div:nth-child(2)>div>.Like{
+    font-weight: 900;
+    margin-bottom: 10px;
+ }
+ .main-footer>.sub-footer>div:nth-child(2)>div>.news{
+    /* font-weight: 900; */
+    font-size: 12px;
+    margin-bottom: 10px;
+ 
+ }
+ .main-footer>.sub-footer>div:nth-child(2)>div>.inputbox{
+    width: 62%;
+    padding: 5px;
+ }
+ .main-footer>.sub-footer>div:nth-child(2)>div>.inputbox+button{
+    padding: 5px;
+    background-color: black;
+    color:white;
+    margin-left: -5px;
+ }
+ .social-icon{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+ }
+ .icon{
+    font-size: 26px;
+    margin-left: 20px;
+ }
+ .location{
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+ }
+ .location img{
+    width: 1.4%;
+    margin-left: 10px;
+ }
+ .developer{
+    width: 90%;
+    margin:auto;
+    margin-left: 90px;
+    
+ 
+ }
+ .developer img{
+    width: 6%;
+    /* margin-top: -10px; */
+ }
+ .developer .fac{
+    margin-left: 10px;
+    /* margin-top: 20px; */
+ }
+ 
