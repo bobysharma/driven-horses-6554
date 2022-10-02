@@ -601,3 +601,100 @@ padding-bottom: 20px;
    margin-left: 10px;
    /* margin-top: 20px; */
 }
+.popup{
+   /* position: fixed;
+   left: 50%;
+   /* top: 50%; */
+   /* text-align: center;  */
+   /* transform: translate(-50%,-50%); */
+   /* display: none; */ 
+   z-index: 1;
+   background-color: white;
+   width: 450px;
+  
+   position: fixed;
+   transform: translate(-50%,-50%);
+   left: 50%;
+   top: 50%;
+   /* border-radius: 8px; */
+   font-family: "Poppins",sans-serif;
+   display: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+.popup>.popup-inside{
+   padding: 30px 40px;
+   text-align: center;
+}
+.popup>.term{
+   font-size: 13px;
+   text-align: left;
+   background-color: #EEEEEE;
+   font-size:10px;
+   line-height: 11px;
+   padding: 20px;
+}
+.popup>.popup-inside>span{
+
+
+}
+.popup>.popup-inside>.pop{
+
+   display:flex;
+   gap:10px;
+   justify-content: center;
+   margin-bottom: 10px;
+   
+}
+/* .popup>{
+
+text-align: center;
+} */
+.popup>.popup-inside>.pop img{
+   width: 5%;
+}
+.popup>h2{
+   text-align: ;
+}
+.popup>.popup-inside>hr{
+   width: 50%;
+   margin-left: 110px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.popup>span{
+   text-align: justify;
+}
+.popup>.popup-inside a{
+   margin-top: 20px;
+   /* margin:31px 125px 13px; */
+   letter-spacing: 3px;
+   padding: 10px;
+   font-weight: 500;
+   color:black;
+
+}
+.popup>.popup-inside>p{
+   font-weight: 600;
+}
+.popup>.popup-inside>.email{
+   font-weight: 100;
+   font-size: 13px;
+}
+.popup>.popup-inside button{
+   display: block;
+   /* margin:  0 0 0px auto; */
+   margin-left: 80px;
+   margin-top: 10px;
+   background-color: black;
+   padding: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   font-size: 15px;
+   color: white;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   margin-bottom: 40px;
+   margin-top: 40px;
+}

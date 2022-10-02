@@ -16,7 +16,7 @@
     line-height: 60px;
     padding-left: 20px;
      
-    
+    background-color: white;
 
 }
  
@@ -35,10 +35,22 @@
 .navbar>div>div>img{
     width: 117px;    
 }
+.navbar>div>div>p>img{
+    position: relative;
+    left:80px;
+    width: 40px;
+}
  .navbar>div>div>a{ 
     text-decoration: none;
       margin-left: 20px;
       color:#3F0017
+}
+ 
+.navbar>div>p>span>img{
+    width: 90%;
+    margin-top: 20px;
+    /* padding: 10px; */
+    
 }
   
 .navbar>div>p>input[type="text"]{
@@ -48,11 +60,11 @@ padding-left: 30px;
 border: 1px solid #CCCCCC;
 color: #75757D;    
 }
-.navbar>div>p>img{
+.navbar>div>p>#search{
     width: 18px;
     position: relative;
-    left: -189px;
-    top:5px;
+    left: 5px;
+    top:-62px;
 }
 /* Have a question section */
 .haq{
@@ -60,6 +72,7 @@ color: #75757D;
     margin-top: -24px;
     padding: 25px;
     font-size: 13px;
+    background-color: white;
      
 
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;

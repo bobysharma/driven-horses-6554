@@ -64,7 +64,7 @@
     display: flex;
     gap:20px;
 }
-.product>.select{
+.product>.select1{
     border: 1px solid #DDDDDD;
     width: 21%;
     padding:10px;
@@ -72,8 +72,10 @@
     display: flex;
     justify-content: space-between;
     font-weight: 700;
+    
 
 }
+ 
 .product>div>.select{
     border: 1px solid #DDDDDD;
     width: 100%;
@@ -82,4 +84,32 @@
     font-weight: 700;
     
 }
- 
+.showproduct>.filter>.show-div{
+    border:0;
+   padding: 10px; 
+     
+} 
+.showproduct>.filter>.show-div>input,
+.showproduct>.filter>.show-div>input{
+margin-bottom: 10px;
+font-weight: 100;
+}
+.showproduct>.filter>.show-div>span,
+.showproduct>.filter>.show-div1>span{
+    font-weight: 200;
+}
+
+.showproduct>.filter>.show-div:hover{
+    border:0;
+}
+.category,.size,.color,.pattern,.discount,.re,.tranding,.brand{
+    display: flex;
+    justify-content: space-between;
+}
+.showproduct>.show-allproduct>div>p{
+    margin-top: 10px;
+}
+.showproduct>.show-allproduct>div>p:nth-child(3){
+    margin-top: 10px;
+   font-weight: 600;
+}

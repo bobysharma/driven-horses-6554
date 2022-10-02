@@ -1,36 +1,86 @@
- 
+// filter sec
+document.querySelector(".select1").addEventListener("click", allfilter)
+
+function allfilter(){
+    
+    let show=document.querySelector(".filter");
+    if(show.style.display=="none")
+    { document.querySelector(".select1").style.width="20%";
+    document.querySelector(".select1>span+span").innerHTML=`<i class="select-icon fa-solid fa-sort-up"></i>`;
+    document.querySelector(".select1>span").innerText="Hide Filter";
+        show.style.display="block";
+    }
+    else{
+        show.style.display="none";
+        document.querySelector(".select1").style.width="10%";
+        document.querySelector(".select1>span+span").innerHTML=`<i class="select-icon fa-solid fa-sort-down"></i>`;
+        document.querySelector(".select1>span").innerText="Show Filter";
+    }
+}
+
+
+document.querySelector(".category").addEventListener("click", showdata)
+
+function showdata(){
+    let show=document.querySelector(".show-div");
+    if(show.style.display=="none")
+    {document.querySelector(".category>span+span").innerHTML=`<i class="fa-solid fa-minus"></i>`;
+        show.style.display="block";
+    }
+    else{
+        show.style.display="none";
+        document.querySelector(".category>span+span").innerHTML=`<i class="fa-solid fa-plus"></i>`;
+    }
+}
+
+document.querySelector(".size").addEventListener("click", showdata1)
+
+function showdata1(){
+    let show=document.querySelector(".show-div1");
+    if(show.style.display=="none")
+    {document.querySelector(".size>span+span").innerHTML=`<i class="fa-solid fa-minus"></i>`;
+        show.style.display="block";
+    }
+    else{
+        show.style.display="none";
+        document.querySelector(".size>span+span").innerHTML=`<i class="fa-solid fa-plus"></i>`;
+    }
+}
+
+
     let arr=[];
     var mensData = [
     {
       image_url:"https://www.jcrew.com/s7-img-facade/BE996_YD1914?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480", 
       name: "Broken-in organic cotton oxford shirt",
-
-      price: "INR 10,867",
+      price:10867,
       strikedoffprice: "2599",
+      quantity:1,
     },
+  
     {
       image_url:"https://www.jcrew.com/s7-img-facade/BJ706_YD1962?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-      name: "MEN'S REEBOK SWIM ARUBA FLIP SLIPPERS ",
-      price: 699,
-      strikedoffprice: 999,
+      name: "Secret Wash organic cotton poplin shirt",
+      price: 10867,
+      quantity:1,
     },
     {
       image_url:"https://www.jcrew.com/s7-img-facade/BJ446_YD1929_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
-      name: " MEN'S REEBOK RUNNING AUSTIN SHOES",
-      price: 945,
-      strikedoffprice: 2099,
+      name: " Midweight flannel workshirt in heather",
+      price:12234,
+      quantity:1,
     },
     {
       image_url:"https://www.jcrew.com/s7-img-facade/BJ705_WZ0199_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
       name: "MEN'S REEBOK SWIM AVENGER FLIP LP SLIPPERS",
       price: 399,
-      strikedoffprice: 799,
+      quantity:1,
     },
     {
       image_url:"https://www.jcrew.com/s7-img-facade/BF792_YD2123_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
       name: "MEN'S REEBOK RUNNING TEMPO SHOES ",
       price: 1620,
-      strikedoffprice: 3599,
+      quantity:1,
     },
     {
       image_url:"https://www.jcrew.com/s7-img-facade/BJ498_YD0088_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=480&hei=480",
@@ -166,12 +216,12 @@
 let img=document.createElement("img");
 img.src=el.image_url;
 
-let  title=document.createElement("h3");
+let  title=document.createElement("p");
 title.innerText=el.name;
-let price=document.createElement("h4");
-price.innerText=el.price; 
-let sprice=document.createElement("h4");
-sprice.innerHTML="Price off -"+"<s>"+el.strikedoffprice+"</s>";
+let price=document.createElement("p");
+price.innerText="INR-"+el.price; 
+let sprice=document.createElement("p");
+// sprice.innerHTML="Price off -"+"<s>"+el.strikedoffprice+"</s>";
  
 let btn=document.createElement("button");
 btn.innerText="Add TO Cart";
@@ -183,7 +233,9 @@ document.querySelector(".show-allproduct").append(card);
 
   })
   function addcart(el){
+    
     arr.push(el);
+
     localStorage.setItem("items",JSON.stringify(arr));
   }
 

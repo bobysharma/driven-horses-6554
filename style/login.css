@@ -1,0 +1,116 @@
+.container{
+    display:flex;
+    flex-direction:column ;
+   
+    left: 700px;
+    display: none;
+    width: 50%;
+    background-color: white;
+
+}     .container>.form{
+            width:25%;
+            margin:auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            position:absolute;
+            left: 700px;
+            z-index: 2;
+            top:70px;
+            background-color: white;
+          
+
+        }
+        form{
+             margin-left: 25px;
+        }
+        label{
+            display: block;
+            color: #999999;
+            font-weight: bolder;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"]{
+            width: 95%;
+            padding: 14px;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: 1px solid #D1D5DB;
+            /* color: #D9D5DB; */
+            font-size: 16px;
+            
+            
+        }
+        input[type="submit"]{
+            background-color: black;
+            color:#888BAC;
+        }
+        h3{
+
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .container>.img{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            
+
+        }
+       
+        
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder{
+            color: #999999;
+            opacity: 0.5;
+        }
+        .terms{
+            color:#999999;
+            font-size: 16px;
+            margin-bottom: 30px;
+         line-height: 25px;
+            text-align: center;
+             
+        }
+        .gotologin{
+            color:#999999;
+            font-size: 20px;
+            margin-bottom: 20px;
+         margin-top: 20px;
+         margin-bottom: 25px;
+            text-align: center;
+             
+        }
+        .label{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .label>label :nth-child(1){
+            text-decoration: none;
+             margin-right: 5px;
+        }
+        #login{
+            background-color: black;
+            color:#ECF4F6;
+            
+            cursor: pointer;
+        }
+        
+        .btn{
+            width: 95%;
+             font-size: 13px;
+            display:flex;
+            justify-content: space-between;
+            color: #B68B76;
+            margin-top: -10px;
+            background-color: white;
+            /* border: 1px solid #D1D5DB ; */
+            
+        }
+         
