@@ -18,3 +18,7 @@ function allfilter(){
         show.style.display="none";   
     }
 }
+
+let cartitem=JSON.parse(localStorage.getItem("items"))||0;
+let cart =cartitem.length||0;
+document.querySelector("sup").innerText=cart;

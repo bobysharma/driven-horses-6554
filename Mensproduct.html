@@ -5,25 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men clothing product</title>
+    <title>JCrew</title>
     <link rel="stylesheet" href="style/Navbar.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/Login.css">
     <link rel="stylesheet" href="style/product.css">
-    <link rel="stylesheet" href="style/mens.css">
-    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <div class="popup">
+        <div class="popup-inside">
+        <div class="pop">
+            <img src="data:image/png;base64,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"><span>INDIA</span>
+        </div>
+      <h5></h5>  JCREW.COM SHIPS ALL</h5>
+         <h1>Around the WORLD</h1>
+         <hr/>
+         <p>FLAT-RATE SHIPPING</p>
+           <p>  DUTY-FREE SHOPPING IN YOUR </p>
+            <p> LOCAL CURRENCY</p>
+           <p>NEED HELP?</p>
+            <p class="email">email julie@jcrew.com or</p>
+            <p class="email"> call 1-434-385-5775</p>
+            <button class="close">START SHOPPING</button>
+            <a href="#">Take me to the us site</a>
+            </div>
+
+            <div class="term"><span>By clicking "start shopping," you agree to ourTerms of Use and Privacy Policy, including the use ofcookiesand the transfer of your personal information to the United States, a jurisdiction that may not provide an equivalent level of data protection to the laws in your home country.</span></span></div>
+    </div>
+</div>
+
+<div class="container">
+
+     
+    <div class="form"> 
+        <h3>Sign In</h3>
+        <h5 id="success"></h5>
+        <form>
+            
+            <label>Email</label> 
+            <input type="text" id="email" placeholder="Enter  Email" value=""/> 
+            <h5 id="emailwar"></h5>
+             
+            <input type="password" id="password" placeholder="Enter  password" value=""/>
+            <h5 id="passwordwar"></h5>
+            <div class="label">  <label><input type="checkbox" name="" id="checkbox">Remember Me</label><label><a href="#">Forgot Password?</a></label></div> 
+            <input type="submit" id="login" value="SIGN IN NOW">
+             <div class="btn"> This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</div>
+            <hr>
+            
+        </form>
+        <div class="gotologin">Don't have an account?<a href="Signup.html">Sign Up</a></div>
+    </div>
+</div>
+    
     <!-- navbar Section -->
+     
     <div class="navbar">
+        
         <!-- https://searchlogovector.com/wp-content/uploads/2021/11/jcrew-logo-vector.png -->
         <div>
             <div><img src="https://cdn.clarip.com/jcrew/cookieconsent/assets/img/default.png"></div>
             <div>
                 <a href="">New</a>
-                <a href="">Women</a>
-                <a href="">Men</a>
+                <a href="Women.html">Women</a>
+                <a href="Mens.html">Men</a>
                 <a href="">Kids</a>
-                <a href="">Cashmere</a>
+                <a href="Mensproduct.html">Men Product</a>
                 <a href="">Home</a>
                 <a href="">Stories</a>
                 <a href="">Sale</a>
@@ -32,15 +83,14 @@
         </div>
         <div>
             <p> <input type="text" placeholder="Search J.Crew" />
-                <img src="https://www.jcrew.com/next-static/images/jcrew/svg/icon_search_d.svg" />
+                <img id="search" src="https://www.jcrew.com/next-static/images/jcrew/svg/icon_search_d.svg" />
             </p>
-            <p>Sign</p>
-            <p>cart</p>
+            <p class="filterlogin"> Sign In </p>
+            <p> <a href="Cart.html"><img src="https://www.jcrew.com/next-static/images/jcrew/svg/icon_bag_d.svg"></a><sup>2</sup></p>
         </div>
     </div>
     <!-- have a question -->
     <div class="haq">Have a question? We can help.<a href="">*</a></div>
-
     <div class="heading-product">
         SHOP ALL MEN'S CLOTHING
     </div>
@@ -138,3 +188,5 @@
 
 </html>
 <script src="script/Menproduct.js"></script>
+<script src="script/index.js"></script>
+<script src="script/fetch.js"></script>

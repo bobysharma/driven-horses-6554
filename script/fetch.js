@@ -14,7 +14,9 @@ function fetchdata(event){
     let password=localStorage.getItem("password");
     let name=localStorage.getItem("name");
     if(inputemail==email && inputpassword==password){
-         document.querySelector(".sign").innerText= "hi there" ;
+         document.querySelector(".filterlogin").innerText= "hi"+name ;
+         alert("hello");
+         document.querySelector(".container").style.display="none";
     }
      if(inputemail!=email){
         // inputemail="";
